@@ -15,13 +15,14 @@ public class StartButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void LoadA(string Whitebox)
+  //  public static void LoadScene(string TechProof, SceneManagement.LoadSceneMode mode = LoadSceneMode.Single);
+    public void LoadA(string TechProof)
     {
-        Debug.Log("Whitebox to load: " + Whitebox);
-        SceneManager.LoadScene(Whitebox);
+        Debug.Log("Whitebox to load: " + TechProof);
+        SceneManager.LoadScene(TechProof);
     }
 }
 

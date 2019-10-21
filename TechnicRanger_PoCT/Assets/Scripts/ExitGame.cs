@@ -13,6 +13,9 @@ public class ExitGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Application.Quit();
+        if (Input.GetMouseButtonUp(0))
+        {
+            Application.Quit();
+        }
     }
 }
