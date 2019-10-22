@@ -16,17 +16,27 @@ public class SceneSwitching : MonoBehaviour
     {
         if (Input.GetKeyDown("1"))
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("TechProof"));
+            Debug.Log("ONE");
+            SceneManager.LoadScene("TechProof");
+            //SceneManager.SetActiveScene(SceneManager.GetSceneByName("TechProof"));
         }
 
         if (Input.GetKeyDown("2"))
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Skateboard"));
+            SceneManager.LoadScene("Skateboard");
+            //SceneManager.SetActiveScene(SceneManager.GetSceneByName("Skateboard"));
         }
 
         if (Input.GetKeyDown("3"))
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Whitebox"));
+            SceneManager.LoadScene("Whitebox");
+            //SceneManager.SetActiveScene(SceneManager.GetSceneByName("Whitebox"));
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
+            //SceneManager.SetActiveScene(SceneManager.GetSceneByName("Whitebox"));
+        }
+
     }
 }

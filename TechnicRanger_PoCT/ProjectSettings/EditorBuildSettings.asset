@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/TechProof.unity
     guid: 18d3b318d2418c04ea97269ccca46bbc
+  - enabled: 1
+    path: Assets/_Scenes/Skateboard.unity
+    guid: 081d5bc3abc797f4ca71992e2f885aa1
+  - enabled: 1
+    path: Assets/_Scenes/Whitebox.unity
+    guid: 84979214422bc7c44baecefe9eebe4bd
   m_configObjects: {}
