@@ -8,15 +8,21 @@ public class PlayerController : MonoBehaviour
     public float MouseSensitivity = 1;
     public float CameraDistance = 3;
     public float CameraSphereTestRadius = .3f;
+    public Vector3 CameraOffset;
+
     public float MinCameraDistance = .1f;
     public float Gravity = 9.8f;
     public float FallingMultiplier = 2.5f;
     public float JumpingMultiplier = 2.0f;
     public float AirControlMultiplier = .5f;
 
+    public float WarpFirstTestRadius = .3f;
+    public float WarpSecondTestRadius = 1;
+
     public float JumpSpeed = 8;
 
     public Camera Camera;
+    public WarpManager WarpManager;
 
     //Welcome to Lylly's notes in the script. :)
     // Euler Angle (rotation) is when... x = pitch; y = yaw; z= roll
@@ -25,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 MoveDirection;
 
     private CharacterController characterController;
+    private bool movementEnabled = true;
 
     // Start is called before the first frame update
     void Start()
@@ -32,15 +39,33 @@ public class PlayerController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
+    public void DisableMovement()
+    {
+        movementEnabled = false;
+        characterController.enabled = false;
+    }
+
+    public void EnableMovement()
+    {
+        movementEnabled = true;
+        characterController.enabled = true;
+    }
     // Update is called once per frame
     void Update()
     {
         UpdateMovement();
         UpdateCamera();
+        UpdateWarper();
     }
+
 
     void UpdateMovement()
     {
+        if (!movementEnabled)
+        {
+            return;
+        }
+
         //Our "forward" is the same as the camera
         //Zero out the y so you don't fly up or fall down 
         Vector3 forward = Camera.transform.forward;
@@ -124,22 +149,23 @@ public class PlayerController : MonoBehaviour
 
 
 
+        Vector3 focusPosition = CameraOffset + transform.position;
 
         //                          capsule position + rotation of mouse * back(moving camera back so it's not inside you)
-        Vector3 desiredCameraPosition = transform.position + rotation * Vector3.back * CameraDistance;
+        Vector3 desiredCameraPosition = focusPosition + rotation * Vector3.back * CameraDistance;
 
         Vector3 cameraPosition = Camera.transform.position;
-        Vector3 capsuleToCameraDirection = (desiredCameraPosition - transform.position).normalized;
+        Vector3 capsuleToCameraDirection = (desiredCameraPosition - focusPosition).normalized;
 
         //calculating distance between 2 points; float = the value
-        float cameraMoveDistance = Vector3.Distance(transform.position, desiredCameraPosition);
+        float cameraMoveDistance = Vector3.Distance(focusPosition, desiredCameraPosition);
 
         //output of the raycast/spherecast 
         RaycastHit hit;
 
 
         //Moves the camera(thats in desired location) to the hit point 
-        if (Physics.SphereCast(transform.position, CameraSphereTestRadius, capsuleToCameraDirection, out hit, cameraMoveDistance))
+        if (Physics.SphereCast(focusPosition, CameraSphereTestRadius, capsuleToCameraDirection, out hit, cameraMoveDistance))
         {
             desiredCameraPosition = hit.point;
 
@@ -154,10 +180,32 @@ public class PlayerController : MonoBehaviour
 
         //cameraToCapsule = way the camera is looking to the character
         //                        capsule position - (ABOVE; camera position) ....normalized(makes everything between 0-1 <--  so we know the DIRECTION #PHYSICS)
-        Vector3 cameraToCapsuleDirection = (transform.position - Camera.transform.position).normalized;
+        Vector3 cameraToCapsuleDirection = (focusPosition - Camera.transform.position).normalized;
 
         //Direction lets us compute a rotation(camera) from that direction; rotating camera to face capsule
         //idk why it's .up but it told me to write .up so i will write .up
         Camera.transform.rotation = Quaternion.LookRotation(cameraToCapsuleDirection, Vector3.up);
+    }
+
+    void UpdateWarper()
+    {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            Vector3 CameraDirection = Camera.transform.rotation * Vector3.forward;
+            RaycastHit hit;
+
+            Debug.DrawLine(Camera.transform.position, Camera.transform.position + CameraDirection * 100, Color.red, 30);
+
+            if (Physics.SphereCast(Camera.transform.position, WarpFirstTestRadius, CameraDirection, out hit, 10f))
+            {
+                CameraDirection.y = 0;
+          
+                WarpManager.PlaceWarper(hit.point, CameraDirection);
+            }
+            else 
+            {
+                // no warping cast sound
+            }
+        }
     }
 }
