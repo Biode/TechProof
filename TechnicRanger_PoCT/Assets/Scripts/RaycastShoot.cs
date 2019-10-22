@@ -57,14 +57,14 @@ public class RayCastShoot : MonoBehaviour
                 laserLine.SetPosition(1, hit.point);
 
                 // Get a reference to a health script attached to the collider we hit
-                ShootableBox health = hit.collider.GetComponent<ShootableBox>();
+              //  ShootableBox health = hit.collider.GetComponent<ShootableBox>();
 
                 // If there was a health script attached
-                if (health != null)
-                {
+               // if (health != null)
+               // {
                     // Call the damage function of that script, passing in our gunDamage variable
-                    health.Damage(gunDamage);
-                }
+                //    health.Damage(gunDamage);
+              //  }
 
                 // Check if the object we hit has a rigidbody attached
                 if (hit.rigidbody != null)
