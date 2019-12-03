@@ -581,8 +581,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -0.000012398}
   m_SizeDelta: {x: 961, y: 536}
+=======
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1138, y: 526}
+>>>>>>> parent of 077a467... Scene Switching
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &696806157
 GameObject:
@@ -930,8 +935,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.7, y: -231}
-  m_SizeDelta: {x: 939.6, y: 47.2}
+  m_AnchoredPosition: {x: 0.000024796, y: -235.2}
+  m_SizeDelta: {x: 1138, y: 55.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1610682706
 MonoBehaviour:
@@ -955,7 +960,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4987b45d8746114280636ecbf3d4a7e, type: 3}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

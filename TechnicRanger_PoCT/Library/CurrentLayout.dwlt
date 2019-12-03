@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1928
     y: 51
     width: 1904
     height: 981
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
+>>>>>>> parent of 077a467... Scene Switching
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -40,6 +47,7 @@ MonoBehaviour:
   - {fileID: 3}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 30
     width: 1904
@@ -48,6 +56,19 @@ MonoBehaviour:
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
   controlID: 90
+=======
+    x: 963
+    y: 0
+    width: 406
+    height: 573
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+>>>>>>> parent of 077a467... Scene Switching
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -63,6 +84,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1518
     y: 0
     width: 386
@@ -74,6 +96,16 @@ MonoBehaviour:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    x: 0
+    y: 30
+    width: 1920
+    height: 947
+  m_MinSize: {x: 683, y: 498}
+  m_MaxSize: {x: 14004, y: 14048}
+  vertical: 0
+  controlID: 67
+>>>>>>> parent of 077a467... Scene Switching
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,6 +121,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 0
     width: 376
@@ -96,6 +129,15 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
+=======
+    x: 1369
+    y: 0
+    width: 551
+    height: 947
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 14}
+>>>>>>> parent of 077a467... Scene Switching
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -116,9 +158,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 563
     width: 1518
     height: 368
+=======
+    y: 573
+    width: 1369
+    height: 374
+>>>>>>> parent of 077a467... Scene Switching
   m_MinSize: {x: 232, y: 274}
   m_MaxSize: {x: 10002, y: 10024}
   m_ActualView: {fileID: 13}
@@ -147,8 +195,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1904
     height: 981
+=======
+    width: 1920
+    height: 997
+>>>>>>> parent of 077a467... Scene Switching
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -168,7 +221,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1904
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -189,8 +242,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
-    width: 1904
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -213,12 +266,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1518
     height: 931
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
   controlID: 91
+=======
+    width: 1369
+    height: 947
+  m_MinSize: {x: 406, y: 498}
+  m_MaxSize: {x: 10002, y: 14048}
+  vertical: 1
+  controlID: 104
+>>>>>>> parent of 077a467... Scene Switching
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,12 +300,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1518
     height: 563
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
   controlID: 92
+=======
+    width: 1369
+    height: 573
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
+  vertical: 0
+  controlID: 105
+>>>>>>> parent of 077a467... Scene Switching
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,11 +332,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376
     y: 0
+<<<<<<< HEAD
     width: 1142
     height: 563
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
+=======
+    width: 963
+    height: 573
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 16}
+>>>>>>> parent of 077a467... Scene Switching
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
@@ -319,10 +398,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1928
     y: 644
     width: 1516
     height: 348
+=======
+    x: 0
+    y: 646
+    width: 1367
+    height: 354
+>>>>>>> parent of 077a467... Scene Switching
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -336,6 +422,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -343,13 +430,28 @@ MonoBehaviour:
   - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ti698080\Documents\GitHub\TechProof\TechnicRanger_PoCT
+=======
+    - Assets/Skyboxes
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Skyboxes
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\wcmac\Documents\GitHub\TechProof\TechnicRanger_PoCT
+>>>>>>> parent of 077a467... Scene Switching
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 6e0f0000
     m_LastClickedID: 3950
     m_ExpandedIDs: 00000000340c0000bc0f000000ca9a3b
+=======
+    m_SelectedIDs: 6a0d0000
+    m_LastClickedID: 3434
+    m_ExpandedIDs: 00000000200c0000ac0f000000ca9a3b
+>>>>>>> parent of 077a467... Scene Switching
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +479,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000340c0000bc0f0000
+=======
+    m_ExpandedIDs: 00000000200c0000ac0f0000
+>>>>>>> parent of 077a467... Scene Switching
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -453,10 +559,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 3446
     y: 81
     width: 384
     height: 911
+=======
+    x: 1369
+    y: 73
+    width: 549
+    height: 927
+>>>>>>> parent of 077a467... Scene Switching
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -488,16 +601,28 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1928
     y: 81
     width: 374
     height: 543
+=======
+    x: 963
+    y: 73
+    width: 402
+    height: 553
+>>>>>>> parent of 077a467... Scene Switching
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 84130000
       m_LastClickedID: 4996
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+>>>>>>> parent of 077a467... Scene Switching
       m_ExpandedIDs: d2fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -542,10 +667,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2304
     y: 81
     width: 1138
     height: 543
+=======
+    x: 0
+    y: 73
+    width: 961
+    height: 553
+>>>>>>> parent of 077a467... Scene Switching
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 3a3338dc01439c14fa9382cc71d90521
   m_SceneLighting: 1
@@ -553,9 +685,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 1, z: 0}
     speed: 2
     m_Value: {x: 0, y: 1, z: 0}
+=======
+    m_Target: {x: -0.06863332, y: 0.8335642, z: -0.3510495}
+    speed: 2
+    m_Value: {x: -0.06863332, y: 0.8335642, z: -0.3510495}
+>>>>>>> parent of 077a467... Scene Switching
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -583,6 +721,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.21354389, y: -0.09799719, z: 0.021534415, w: 0.97176737}
     speed: 2
     m_Value: {x: 0.21354389, y: -0.09799719, z: 0.021534415, w: 0.97176737}
@@ -590,6 +729,15 @@ MonoBehaviour:
     m_Target: 4.0416584
     speed: 2
     m_Value: 4.0416584
+=======
+    m_Target: {x: 0.22323996, y: -0.187529, z: 0.04381771, w: 0.95555055}
+    speed: 2
+    m_Value: {x: 0.22323996, y: -0.187529, z: 0.04381771, w: 0.95555055}
+  m_Size:
+    m_Target: 14.888245
+    speed: 2
+    m_Value: 14.888245
+>>>>>>> parent of 077a467... Scene Switching
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -622,10 +770,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2304
     y: 81
     width: 1138
     height: 543
+=======
+    x: 0
+    y: 73.6
+    width: 768
+    height: 428
+>>>>>>> parent of 077a467... Scene Switching
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -637,10 +792,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -569
     m_HBaseRangeMax: 569
     m_VBaseRangeMin: -263
     m_VBaseRangeMax: 263
+=======
+    m_HBaseRangeMin: -384
+    m_HBaseRangeMax: 384
+    m_VBaseRangeMin: -205.5
+    m_VBaseRangeMax: 205.5
+>>>>>>> parent of 077a467... Scene Switching
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -658,25 +820,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 1138
       height: 526
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 569, y: 263}
+=======
+      width: 768
+      height: 411
+    m_Scale: {x: 1.25, y: 1.25}
+    m_Translation: {x: 384, y: 205.5}
+>>>>>>> parent of 077a467... Scene Switching
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -569
       y: -263
       width: 1138
       height: 526
+=======
+      x: -307.2
+      y: -164.4
+      width: 614.4
+      height: 328.8
+>>>>>>> parent of 077a467... Scene Switching
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1138, y: 543}
+=======
+  m_LastWindowPixelSize: {x: 768, y: 428}
+>>>>>>> parent of 077a467... Scene Switching
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
